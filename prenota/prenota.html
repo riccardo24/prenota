@@ -1,0 +1,81 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+
+  <a  href="prenota.html">prenota</a>
+  <a href="elenco.php">elenco</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="content">
+  <h2>Prenotazione festa d'istituto del 22/05/2017 dalle ore 23,30 alle 04,30</h2>
+  <form action ="reg.php" method="post">
+Nome <input type="text"  name="nome" size="20" />
+Cognome <input type="text" name="cognome" size="20" />
+<br />
+E-mail <input type = "text" name="e-mail" size="30" />
+<br />
+ <input type="submit" name="invio" value="invia" />
+<input type="reset" name="cancella" value="annulla" />
+</form> 
+  
+  
+</div>
+
+<div class="footer">
+  <p>prodotto da Alessadro Mosca,Edoardo Cegna,Riccardo Damiani</p>
+</div>
+
+</body>
+</html>
